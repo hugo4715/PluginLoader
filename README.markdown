@@ -5,6 +5,6 @@ You can take a look to the [PluginLoader testplugin](https://github.com/hugo4715
 
 ##Loading Plugin
 The PluginManager object is a singleton, so you can access it using
-'''java
+```java
 PluginManager.getInstance();
-'''
+```
