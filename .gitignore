@@ -1,5 +1,6 @@
 
 .metadata
+src/
 bin/
 tmp/
 *.tmp
