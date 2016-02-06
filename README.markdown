@@ -8,3 +8,30 @@ The PluginManager object is a singleton, so you can access it using
 ```java
 PluginManager.getInstance();
 ```
+You can set if you want to use logs using this line. It will create a log folder and save logs as zip files.
+```java
+PluginManager.getInstance().setUseLogFile(true);
+```
+You can then load plugins using 
+```java
+PluginManager.getInstance().loadPlugins(new File("plugins/"));
+```
+It will load all plugins in the specified folder and call their `onLoad()` method.
+If you just want to load one plugin, you can also use 
+```java
+PluginManager.getInstance().loadPlugins(new File("plugins/myPlugin.jar"));
+```
+
+At the end you must use this static metohd 
+```java
+PluginManager.close();
+```
+It will call the `onUnload()`  then unload the plugins and destroy the PluginManager instance>
+
+
+So, in your plugin main you should have
+```java
+PluginManager.getInstance().setUseLogFile(true);
+PluginManager.getInstance().loadPlugins(new File("plugins/"));
+PluginManager.close();
+```
