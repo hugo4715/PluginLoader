@@ -3,7 +3,7 @@
 
 ### This software is under [Creative commons](http://creativecommons.org/licenses/by/4.0/) (The complete license is [here](http://creativecommons.org/licenses/by/4.0/legalcode))
 It can load plugins packaged in .jar by looking in the manifest file to find information.
-You can take a look to the [PluginLoader testplugin](https://github.com/hugo4715/PluginLoader TestPlugin) repository to find how plugins are made.
+You can take a look to the [PluginLoader testplugin](https://github.com/hugo4715/PluginLoader_TestPlugin) repository to find how plugins are made.
 
 
 ## Loading Plugin
