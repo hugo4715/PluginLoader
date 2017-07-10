@@ -25,7 +25,7 @@ If you just want to load one plugin, you can also use
 PluginManager.getInstance().loadPlugin(new File("plugins/myPlugin.jar"));
 ```
 
-At the end you must use this static metohd 
+At the end you must use this static method 
 ```java
 PluginManager.close();
 ```
